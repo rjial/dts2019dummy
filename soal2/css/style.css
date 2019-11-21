@@ -1,0 +1,291 @@
+@import url("https://unpkg.com/@getbase/containers/index.css");
+@import url("https://unpkg.com/@getbase/layout-helpers/index.css");
+@import url("https://unpkg.com/@getbase/grid/index.css");
+@import url("https://unpkg.com/@getbase/tables/index.css");
+@import url("https://unpkg.com/normalize.css@7.0.0/normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Raleway:500|Roboto:300,400,900&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+.container-page {
+    position: relative;
+    min-height: 100vh;
+}
+.header {
+    background-color: #3498db;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    color: white;
+    padding: 25px;
+}
+
+.label-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.row {
+    border-top-color: #eee;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+.table-barang-buku{
+    padding: 0 25px;
+    margin-bottom: 25px;
+}
+
+.forrm-tambah-buku {
+    padding-left: 25px;
+    border-right: 1px solid #EEE;
+}
+
+table {
+    table-layout: auto; 
+    background-color: white;
+    /* box-shadow: 8px 8px 20px 0px; */
+    border-collapse: collapse;
+    border-radius: 1em;
+    border: 1px solid #eee;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+}
+
+tbody {
+    padding: 10px;
+}
+
+tbody tr td a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    font-size: small;
+    border-radius: 6px;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+
+tbody tr td a.hapus-buku:hover {
+    background: #e74c3c;
+    /* border: none; */
+    color: white;
+}
+
+tbody tr td a.edit-buku:hover {
+    background: #3498db;
+    /* border: none; */
+    color: white;
+}
+.form-tambah-buku {
+    padding: 10px;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    height:100%;
+}
+
+.judul-buku input {
+    width: 100%;
+    height: 35px;
+    margin: 15px 0px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+.judul-buku label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.penerbit-buku input {
+    width: 100%;
+    height: 35px;
+    margin: 15px 0px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+.penerbit-buku label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.genre-buku select {
+    background-color: white;
+    width: 100%;
+    height: 35px;
+    margin: 15px 0px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+.genre-buku label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.harga-buku input {
+    width: 100%;
+    height: 35px;
+    margin: 15px 0px;
+    padding: 0 10px;
+    border: none;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+}
+
+.harga-buku label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.submit_form {
+    width: 100%;
+    transition: 0.5ms;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.submit_form:hover {
+    border: 1px solid #928bcf;
+    color: white;
+    background: #928bcf;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 100px;
+}
+
+.modal-content {
+    border: 1px solid black;
+    padding: 32px;
+    border-radius: 6px;
+    margin: 0 250px;
+    background: white;
+}
+
+#close-modal {
+    float: right;
+    margin-top: -10px;
+    padding: 10px 12px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+#close-modal:hover {
+    background-color: #e74c3c;
+    color: white;
+    /* border: 0; */
+}
+
+#close-modal a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#close-modal a:link:hover {
+    color: white;
+}
+
+.notifikasi {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    margin: 25px;
+    
+    
+}
+.notifikasi ul li {
+    list-style: none;
+}
+
+.notif-content {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 25px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.green-notif {
+    background: #2ecc71;
+}
+
+.red-notif {
+    background: #e74c3c;
+}
+.submit-hapus-buku {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-family: Roboto, sans-serif;
+    font-size: 11pt;
+    background: white;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.submit-hapus-buku:hover {
+    background: #e74c3c;
+    color: white;
+    
+}
+
+.batals:hover {
+    background: #3498db !important;
+}
+
+.rata-kanan {
+    float: right;
+}
+input {
+    transition: 0.3s;
+}
+
+*:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px -5px black;
+}
+
+.footer {
+    /* position: absolute; */
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+}

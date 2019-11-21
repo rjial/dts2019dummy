@@ -1,0 +1,101 @@
+@import url("https://unpkg.com/@getbase/containers/index.css");
+@import url("https://unpkg.com/@getbase/layout-helpers/index.css");
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Montserrat:900|Open+Sans:300i&display=swap');
+
+body {
+    margin:0;
+    padding: 0;
+}
+.judul {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.kosakata {
+    font-family: 'Lato', sans-serif;
+}
+
+.kotak {
+    align-self: center;
+    display: flex;
+}
+.kotak * {
+    margin: 5px;
+    height: 35px;
+}
+
+.deskripsi {
+    font-style: italic;
+}
+
+.tombol_submit {
+    border: 0;
+    background-color: grey;
+    border-radius: 15px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+.tombol_submit:hover {
+    background-color:#80808096;
+}
+
+.kotak_isi {
+    border: 0;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+.bahasa {
+    border: 0;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 0 10px;
+}
+
+.navbar {
+    height: 50px;
+    background-color: black;
+}
+.navbar ul {
+    display: flex;
+    margin:0;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 15px 10px;
+    color: white;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.navbar ul li:nth-child(1) {
+    float: left;
+}
+
+.navbar ul li:nth-child(n+2) {
+    float: right;
+}
+
+.pilih_bahasa * {
+    margin: 10px 0;
+}
+
+.isi_kosakata * {
+    margin: 10px 0;
+}
+
+.lawan_kosakata * {
+    margin: 10px 0;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}

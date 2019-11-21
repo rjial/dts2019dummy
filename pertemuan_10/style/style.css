@@ -1,0 +1,44 @@
+@import url("https://unpkg.com/@getbase/layout-helpers/index.css");
+@import url("https://unpkg.com/@getbase/buttons/index.css");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.container {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+	/* margin-top: 40vh; */
+	border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
+tbody tr td {
+	width: 150px;
+}
+
+tbody tr td input[type=text], input[type=password] {
+	border: 0;
+    background: #cacaca;
+    height: 22pt;
+    border-radius: 4px;
+    color: black;
+    padding: 0 10px;
+    width: 100%;
+}
+
+tbody tr td input[type=submit], button {
+	width: 100%;
+}
+
+a {
+	text-align: center;
+}
+
+tbody tr td * {
+	margin: 7px 0;
+}
